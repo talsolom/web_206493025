@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/style1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+    <script defer src="../static/js4.js" ></script>
+    <title>Movie Page</title>
+</head>
+<body>
+<button onclick=location.href="project_landingpage2.html" type="button"> Home Page</button>
+
+<div class="container">
+    <div class="review-box">
+        <div class="left1"></div>
+        <div class="right">
+            <form class="block" id="myreview" >
+                <br>
+                <h2> Write a Review </h2>
+                <div class="reviewmsg"></div>
+                <br>
+                <h3> Choose a movie:     <select id="movie" class="required">
+                    <option value="----">----</option>
+                    <!--                <option value="" disabled="disabled">Choose an option</option>-->
+                    <option value="Violent Night">Violent Night</option>
+                    <option value="Strange World">Strange World</option>
+                    <option value="The Menu">The Menu</option>
+                    <option value="Black Panther: Wakanda Forever">Black Panther: Wakanda Forever</option>
+                    <option value="Black Adam">Black Adam</option>
+                    <option value="Don't Worry Darling">Don't Worry Darling</option>
+                    <option value="Smile">Smile</option>
+                    <option value="Ticket to Paradise">Ticket to Paradise</option>
+
+                </select>
+                    <br>
+
+                    Write your review:
+                    <br>
+                    <textarea class="fieldarea" placeholder="your review"></textarea>
+                    <br>
+                    Rank</h3>
+                    <ul class="rating">
+                        <li class="rating-item" data-rate="1"></li>
+                        <li class="rating-item active" data-rate="2"></li>
+                        <li class="rating-item" data-rate="3"></li>
+                        <li class="rating-item" data-rate="4"></li>
+                        <li class="rating-item" data-rate="5"></li>
+                    </ul>
+                    <br>
+                    <button type="submit" class="sendbtn">Send</button>
+            </form>
+        </div>
+        <ul class="reviews"> </ul>
+</body>
+</html>
