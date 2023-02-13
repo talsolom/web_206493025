@@ -1,0 +1,34 @@
+//Modules:
+npm install express mysql2 csvtojson path body-parser --save
+
+//routes for creating tables
+app.get('/CreateUsersTable',CreateDB.CreateUsersTable);
+app.get('/CreateMoviesTable',CreateDB.CreateMoviesTable);
+app.get('/CreateReviewsTable',CreateDB.CreateReviewsTable);
+
+//routes for inserting data to tables
+app.get("/InsertUsersData", CreateDB.InsertUsersData);
+app.get("/InsertMoviesData", CreateDB.InsertMoviesData);
+app.get("/InsertReviewsData", CreateDB.InsertReviewsData);
+
+//routes for showing tables
+app.get('/ShowUsersTable', CreateDB.ShowUsersTable);
+app.get('/ShowMoviesTable', CreateDB.ShowMoviesTable);
+app.get('/ShowReviewsTable', CreateDB.ShowReviewsTable);
+
+//routes for dropping tables
+app.get('/DropUsersTable', CreateDB.DropUsersTable);
+app.get('/DropMoviesTable', CreateDB.DropMoviesTable);
+app.get('/DropReviewsTable', CreateDB.DropReviewsTable);
+
+//route for dropping all tables
+app.get('/DropAllTables', CreateDB.DropAllTables);
+
+
+//tables syntx
+CREATE TABLE IF NOT EXISTS users (name VARCHAR(255) NOT NULL, familyname VARCHAR(255) NOT NULL, username VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, birthday VARCHAR(255) NOT NULL)
+
+CREATE TABLE IF NOT EXISTS movies (name VARCHAR(255) NOT NULL, actors VARCHAR(255) NOT NULL, director VARCHAR(255) NOT NULL, length VARCHAR(255) NOT NULL, place VARCHAR(255) NOT NULL, year VARCHAR(4) NOT NULL, genres VARCHAR(255) NOT NULL, status VARCHAR(25) NOT NULL, images VARCHAR(255))
+
+CREATE TABLE IF NOT EXISTS reviews (moviename VARCHAR(255) NOT NULL, review VARCHAR(500) NOT NULL, rating VARCHAR(1) NOT NULL)
+
