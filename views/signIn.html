@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_in</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+<!-- <script defer src="../static/js1.js"></script> -->
+<script defer src="JS/clientside.js"></script>
+
+<body>
+<br>
+<button onclick=location.href="http://localhost:3000/homePage" type="button"> Home Page</button>
+<div class="imgcontainer">
+    <img src="pics/logo1.png" alt="logo" class="logo">
+</div>
+<header>
+    <h1> Criticize any Movie you want and help others </h1>
+</header>
+<section class="containerAttributes">
+    <form class="block" id="my-form">
+        <div class="msg"></div>
+        <br>Username:</br>
+        <input type="text" name="" placeholder="Enter Username" id="username" required>
+        <br>Password:</br>
+        <input type="password" name="" placeholder="Enter Password" id="password" required>
+        <br>
+        <br>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <br>
+        <button type="submit">Sign-in</button>
+        <br>
+        <br> not a memeber yet ?
+        <button onclick=location.href="http://localhost:3000/register" type="button"> register</button>
+    </form>
+</section>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="heb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+<!-- <script defer src="../static/js2.js"></script> -->
+<script defer src="JS/clientside.js"></script>
+
+<body>
+<br>
+<button onclick=location.href="http://localhost:3000/homePage" type="button">Home Page</button>
+
+<div class="imgcontainer">
+    <img src="pics/logo1.png" alt="logo" class="logo">
+</div>
+<section class="containerAttributes">
+    <form action="/insertuserintoDB" method="post" id="my-form1" >
+        <div class="msg"></div>
+        <!-- name: <input title="name must be in English with no special characters" pattern="[a-zA-Z ]+" type="text" name="" placeholder="Enter name" id="name" required > -->
+        <label for="registerName">Name:</label>
+        <input type="text" name="registerName" id="registerName" required>
+        <div class="msgName"></div>
+        <br>
+        <!-- family name: <input title="family name must be in English with no special characters" pattern="[a-zA-Z ]+" type="text" name="" placeholder="Enter name" id="fname" required > -->
+        <label for="registerFname">Family Name:</label>
+        <input type="text" name="registerFname" id="registerFname" required>
+        <div class="msgFname"></div>
+        <br>
+        <!-- username: <input title="username must be in English can include special characters" pattern="[0-9a-zA-Z ]+" type="text" name="" placeholder="Enter Username" id="username" required  > -->
+        <label for="registerUname">User Name:</label>
+        <input type="text" name="registerUname" id="registerUname" required>
+        <div class="msgUname"></div>
+        <br>
+        <!-- email: <input type="email" name="" placeholder="Enter email" id="email" required > -->
+        <label for="registerEmail">Email:</label>
+        <input type="email" name="registerEmail" id="registerEmail" required>
+        <div class="msgMail"></div>
+        <br>
+        <!-- password: <input title="password can include special characters" pattern="[!@#$%^&*()_+-=[]{};':\/?]*$0-9a-zA-Z ]+"type="password" name="" placeholder="Enter Password" id="psw" required > -->
+        <label for="registerpsw">Password:</label>
+        <input type="password" name="registerpsw" id="registerpsw" required>
+        <div class="msgpsw"></div>
+        <br>
+        <label for="registerBD">Birthday:</label>
+        <input type="date" name="registerBD" id="registerBD" required>
+        <br>
+        <br>
+        <input type="submit" class="submit" value="Register">
+        <br>
+    </form>
+</section>
+
+<ul class="registered"> </ul>
+
+</body>
+
+</html>

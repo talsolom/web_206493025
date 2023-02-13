@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+
+    <script defer src="JS/clientside4.js"></script>
+
+    <title>Delete Account</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- <li class="active"><a href="project_landingpage1.html">Home</a></li> -->
+            <li><a href="http://localhost:3000/homePage2">Home</a></li>
+            <li><a href="http://localhost:3000/profile">Profile</a></li>
+            <li><a href="http://localhost:3000/reviewPage">Review</a></li>
+        </ul>
+    </nav>
+    <br>
+    <!-- <button onclick=location.href="http://localhost:3000/homePage" type="button"> Home Page</button> -->
+    <div class="imgcontainer">
+        <img src="pics/logo1.png" alt="logo" class="logo">
+    </div>
+    <header>
+        <!-- <h1> Criticize any Movie you want and help others </h1> -->
+            <!-- find movie by category -->
+        <!-- <h1>Find customer by name</h1> -->
+        <h4><p>We're sorry to see you go!</p><p>If there is anything we could have done to improve
+            your experience on our site, please let us know.</p><p>Before you delete your account, 
+                please keep in mind that this action is permanent and cannot be undone. </p> 
+            <p>If you still wish to proceed, please follow the instructions below to complete the account deletion process.</p> 
+           <p>Thank you for being a part of our community.</p></h4>
+
+    </header>
+    <section class="containerAttributes">
+        <form class="block" id="my-form" action="/deleteuserfromDB" method="post">
+            <label for="email"><h4>Write Here the account's email:</h4></label>
+           <input type="text" name="email" id="email" required>
+            <input type="submit" class="submit" value="Search">
+        </form>
+        <br>
+        <img src="pics/sadpop.png" alt="profilephoto" class="logo">
+        <br>
+    </section>
+    </body>
+
+
+
+
+</html>
