@@ -199,15 +199,15 @@ const ShowReviewsTable = (req,res)=>{
     })};
 
 const DropReviewsTable = (req, res)=>{
-    var Q12 = "DROP TABLE movies";
+    var Q12 = "DROP TABLE reviews";
     SQL.query(Q12, (err, mySQLres)=>{
         if (err) {
-            console.log("error in droping movies table ", err);
-            res.status(400).send({message: "error in dropping movies table" + err});
+            console.log("error in droping reviews table ", err);
+            res.status(400).send({message: "error in dropping reviews table" + err});
             return;
         }
-        console.log("movies table dropped");
-        res.send("movies table dropped");
+        console.log("reviews table dropped");
+        res.send("reviews table dropped");
         return;
     })
 }
