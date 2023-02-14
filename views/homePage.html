@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+    <script defer src="JS/clientside2.js"></script>
+
+</head>
+<body>
+<!--active nav bar-->
+<nav>
+    <ul>
+        <li><a href="http://localhost:3000/homePage">Home</a></li>
+        <li><a href="">Profile</a></li>
+        <li><a href="">Review</a></li>
+    </ul>
+</nav>
+
+<div class ="box-1">
+    Hello guest, <a href="http://localhost:3000/signIn">sign-in</a> or <a href="http://localhost:3000/register">register</a>
+</div>
+
+<!--popup form-->
+<div class ="box-2">
+    <button class="open-button" onclick="openForm()">Write a review</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm()">X</button>
+
+            <h1>Write a review</h1>
+
+            <p>Dear visitor,
+            </p><p> Writing the reviews on the website is only given to club members only.</p>
+            <p>  If you are not a club member, we invite you to <a href="http://localhost:3000/register">register</a> for free</p>
+            <p> Otherwise, please <a href="http://localhost:3000/signIn">sign-in</a></p>
+        </form>
+    </div>
+</div>
+<!--logo -->
+<header>
+    <img src="pics/logo1.png" alt="logo" class="logo">
+</header>
+<section>
+    <br>
+    <br>
+    Filter by Movie Genres:
+    <input type="radio" name="genre" class="field2" value="action"> action
+    <input type="radio" name="genre" class="field2" value="adventure"> adventure
+    <input type="radio" name="genre" class="field2" value="comedy"> comedy
+    <input type="radio" name="genre" class="field2" value="drama"> drama
+    <input type="radio" name="genre" class="field2" value="fantasy"> fantasy
+    <input type="radio" name="genre" class="field2" value="horror"> horror
+    <input type="radio" name="genre" class="field2" value="musicals"> musicals
+    <input type="radio" name="genre" class="field2" value="mystery"> mystery
+    <input type="radio" name="genre" class="field2" value="romance"> romance
+    <input type="radio" name="genre" class="field2" value="science fiction"> science fiction
+    <input type="radio" name="genre" class="field2" value="thriller"> thriller
+    <br>
+    <br>
+<!--    searchbar-->
+     <input id="searchbar" onkeyup="search_movie()" type="text"
+            name="search" placeholder="Search movie..">
+
+    <!-- ordered list // the function "addmovietolist" insert the movies from database to the list -->
+    <ol id='list'>
+
+    </ol>
+
+    <div class="container">
+        <div class="image"><a href="http://localhost:3000/moviePage"><img src="pics/Ticket_to_Paradise.jpg" style="width: 200px;"></div>
+        <div class="image"><a href="http://localhost:3000/moviePage"><img src="pics/Smile.jpg" style="width: 220px;"></div>
+        <div class="image"><a href="http://localhost:3000/moviePage"><img src="pics/Black_Panther_Wakanda_Forever.jpg" style="width: 220px;"></div>
+        <div class="image"><a href="http://localhost:3000/moviePage"><img src="pics/Black_Adam_(film)_poster.jpg" style="width: 220px;"></div>
+    </div>
+</section>
+</body>
+<footer> </footer>
+</html>

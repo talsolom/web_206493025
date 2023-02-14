@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand&display=swap">
+    <script defer src="JS/clientside3.js"></script>
+
+    <title>Movie Page</title>
+</head>
+<body>
+<!--active nav bar-->
+<nav>
+    <ul>
+        <li><a href="http://localhost:3000/homePage2">Home</a></li>
+        <li><a href="http://localhost:3000/profile">Profile</a></li>
+        <li><a href="http://localhost:3000/reviewPage">Review</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="review-box">
+        <div class="left1"></div>
+        <div class="right">
+            <form action="/insertreviewintoDB" method="post" id="myreview" >
+                <br>
+                <h2> Write a Review </h2>
+                <div class="reviewmsg"></div>
+                <br>
+                <label for="movie:">Choose a movie:</label>
+                <select name="movie" id="movie" required>
+                    <!-- <option value="----">----</option>  -->
+                    <option value="Violent Night">Violent Night</option>
+                    <option value="Strange World">Strange World</option>
+                    <option value="The Menu">The Menu</option>
+                    <option value="Black Panther: Wakanda Forever">Black Panther: Wakanda Forever</option>
+                    <option value="Black Adam">Black Adam</option>
+                    <option value="Don't Worry Darling">Don't Worry Darling</option>
+                    <option value="Smile">Smile</option>
+                    <option value="Ticket to Paradise">Ticket to Paradise</option>
+                </select>
+                    <br>
+                    <label for="review:">Write your review:</label>
+                    <br>
+                    <textarea class="fieldarea" placeholder="your review" name="review" id="review" required></textarea>
+                    <br>
+                    <label for="rating">Rate the movie:</label>
+                    <select name="rating" id="rating" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <ul class="rating">
+                        <li class="rating-item" data-rate="1"></li>
+                        <li class="rating-item active" data-rate="2"></li>
+                        <li class="rating-item" data-rate="3"></li>
+                        <li class="rating-item" data-rate="4"></li>
+                        <li class="rating-item" data-rate="5"></li>
+                    </ul>
+                    <br>
+                    <input type="submit" class="submit" value="Send">
+            </form>
+        </div>
+        <ul class="reviews"> </ul>
+</body>
+</html>
